@@ -2,9 +2,9 @@
 import java.awt.*;    
 import java.awt.event.*;    
 
-public class AdapterExample {  
+public class Adapter {  
 	Frame f;   
-	AdapterExample() {    
+	Adapter() {    
 		f = new Frame ("Window Adapter");   
 		f.addWindowListener (new WindowAdapter() {    
 			public void windowClosing (WindowEvent e) {    
@@ -16,6 +16,6 @@ public class AdapterExample {
 		f.setVisible (true);    
 	}    
 	public static void main(String[] args) {    
-		new AdapterExample();
+		new Adapter();
 	} 
 }
