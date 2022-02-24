@@ -1,8 +1,8 @@
 import java.awt.*;  
 import java.awt.event.*;  
-public class MouseListenerExample extends Frame implements MouseListener{  
+public class MouseListener extends Frame implements MouseListener{  
 	Label l;  
-	MouseListenerExample(){  
+	MouseListener(){  
 		addMouseListener(this);  
 		
 		l=new Label();  
@@ -28,6 +28,6 @@ public class MouseListenerExample extends Frame implements MouseListener{
 		l.setText("Mouse Released");  
 	}  
 	public static void main(String[] args) {  
-		new MouseListenerExample();  
+		new MouseListener();  
 	}  
 }
